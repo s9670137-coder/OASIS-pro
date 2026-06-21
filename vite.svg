@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #060d0b;
+  color: #F1EFE8;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.glow-water {
+  box-shadow: 0 0 24px rgba(55, 138, 221, 0.25);
+}
+.glow-energy {
+  box-shadow: 0 0 24px rgba(29, 158, 117, 0.25);
+}
+.glow-carbon {
+  box-shadow: 0 0 24px rgba(186, 117, 23, 0.25);
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.animate-pulse-soft {
+  animation: pulse-soft 2.5s ease-in-out infinite;
+}
